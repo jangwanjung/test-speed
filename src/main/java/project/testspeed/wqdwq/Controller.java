@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @PostMapping("/test")
-    public void main1(){
+    public long  main1(){
         long startTime = System.currentTimeMillis();
         for(int i =0 ;i<10000000 ; i++){
             System.out.println(i);
@@ -15,5 +15,6 @@ public class Controller {
         long endTime = System.currentTimeMillis();
         System.out.println(endTime-startTime);
 
+        return endTime-startTime;
     }
 }
